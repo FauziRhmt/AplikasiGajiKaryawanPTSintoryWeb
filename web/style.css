@@ -1,0 +1,132 @@
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+* {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   MENU KIRI
+   ========================================================= */
+#menu {
+    background: #efefef;
+    background: linear-gradient(to right, #efefef 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(left, #efefef 0%, #bbbbbb 100%);
+    background: -webkit-linear-gradient(left, #efefef 0%, #bbbbbb 100%);
+
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+    padding: 10px;
+    border-radius: 10px;
+
+    display: block;          /* 🔥 WAJIB */
+    width: 160px;            /* 🔥 WAJIB */
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    border-bottom: 1px solid #969BA5;
+    font-size: 80%;
+}
+
+#menu a {
+    display: block;
+    padding: 5px;
+    border-left: 6px solid #577927;
+    border-right: 6px solid #577927;
+    background-color: #c4c0f1;
+    color: #965180;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: #697269;
+    color: #FFFFFF;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* =========================================================
+   TOP MENU (NAVBAR)
+   ========================================================= */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+
+    background: linear-gradient(to bottom, #efefef 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+    background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+    border-radius: 10px;
+
+    display: inline-block;   /* 🔥 bukan inline-table */
+    white-space: nowrap;
+}
+
+nav ul li {
+    display: inline-block;   /* 🔥 ganti float */
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 6px 12px;
+    color: #757575;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: linear-gradient(to bottom, #4f5964 0%, #5f6975 40%);
+}
+
+nav ul li:hover > a {
+    color: #fff;
+}
+
+/* =========================================================
+   DROPDOWN
+   ========================================================= */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: #5f6975;
+    padding: 0;
+    border-radius: 0;
+    min-width: 150px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+}
+
+nav ul ul li a {
+    padding: 6px 20px;
+    color: #fff;
+}
+
+nav ul ul li a:hover {
+    background: #4b545f;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
